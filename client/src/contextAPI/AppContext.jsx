@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { createContext, useState } from "react";
 import { userDetails, isAuthenticated } from "../api";
+import toast from 'react-hot-toast';
 export const AppContent = createContext();
 
 export const AppContextProvider = (props) => {
