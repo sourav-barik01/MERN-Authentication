@@ -1,5 +1,5 @@
 import axios from 'axios';
-const backendBaseUrl = import.meta.env.VITE_BACKEND_URL || "https://mern-authentication-xi7x.onrender.com";
+const backendBaseUrl = "https://mern-authentication-xi7x.onrender.com";
 
 axios.defaults.withCredentials = true;  // This tells Axios: “Always include cookies and authentication headers when making HTTP requests — even across different origins.”
 // axios.defaults.baseURL = 'http://localhost:4000';
