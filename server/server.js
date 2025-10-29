@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigin = ['http://localhost:5173']
+const allowedOrigin = ['http://localhost:5173', 'https://mern-authentication-frontend-kwof.onrender.com']
 app.use(cors({origin: allowedOrigin, credentials: true}));     // so that we can send cookies in the response from express app
 app.use(express.json());    // Req will be parsed using JSON
 app.use(express.urlencoded({ extended: true }));
